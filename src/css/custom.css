@@ -17,12 +17,41 @@
   --ifm-h1-font-size: 1.8rem;
   --ifm-h2-font-size: 1.5rem;
   --ifm-h3-font-size: 1.2rem;
-  --ifm-h4-font-size: 1.0rem;
+  --ifm-h4-font-size: 1rem;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* kurpa hosk  color theming*/
+  --white: #fff;
+  --grey-200: #f1f3f4;
+  --grey-400: #bdc1c6;
+  --grey-600: #2e3134;
+  --grey-800: #17181b;
+  --black: #000;
+  --grey-100: #f8f9fa;
+  --grey-300: #dbdde1;
+  --grey-500: #5f6368;
+  --grey-700: #282a2d;
+  --grey-900: #0e1013;
+
+  --text-primary-kh: var(--grey-900);
+  --text-secondary-kh: var(--grey-500);
+  --bg-primary-kh: var(--white);
+  --border-dashed-primary-kh: var(--grey-900);
+  --border-solid-kh: var(--grey-300);
+  --contrast-50-kh: var(--grey-100);
+  --contrast-100-kh: var(--grey-200);
+  --contrast-200-kh: var(--grey-300);
+  --contrast-400-kh: var(--grey-600);
+  --highlight-color-kh: #e9f4a4;
+
+  /* general properties */
+  font-family: "Haffer";
+  letter-spacing: calc(16px * 0.02);
+  line-height: 170%;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -31,85 +60,101 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* kurpa hosk  color theming*/
+  --text-primary-kh: var(--grey-100);
+  --text-secondary-kh: var(--grey-500);
+  --bg-primary-kh: var(--black);
+  --border-dashed-primary-kh: var(--grey-500);
+  --border-solid-kh: var(--grey-700);
+  --contrast-50-kh: var(--grey-900);
+  --contrast-100-kh: var(--grey-800);
+  --contrast-200-kh: var(--grey-700);
+  --contrast-400-kh: var(--grey-600);
+  --highlight-color-kh: #e9f4a4;
 }
 
 @font-face {
-  font-family: 'Haffer';
+  font-family: "Haffer";
   src: url(../../static/fonts/Haffer-Light.ttf);
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Haffer';
+  font-family: "Haffer";
   src: url(../../static/fonts/Haffer-Medium.ttf);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Haffer';
+  font-family: "Haffer";
   src: url(../../static/fonts/Haffer-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Haffer';
+  font-family: "Haffer";
   src: url(../../static/fonts/Haffer-SemiBold.ttf);
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'HafferSQ';
+  font-family: "HafferSQ";
   src: url(../../static/fonts/HafferSQ-Light.ttf);
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'HafferSQ';
+  font-family: "HafferSQ";
   src: url(../../static/fonts/HafferSQ-Medium.ttf);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'HafferSQ';
+  font-family: "HafferSQ";
   src: url(../../static/fonts/HafferSQ-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'HafferSQ';
+  font-family: "HafferSQ";
   src: url(../../static/fonts/HafferSQ-SemiBold.ttf);
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'TTCommonsPro';
+  font-family: "TTCommonsPro";
   src: url(../../static/fonts/TTCommonsProMonoMedium.ttf);
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'TTCommonsPro';
+  font-family: "TTCommonsPro";
   src: url(../../static/fonts/TTCommonsProMonoRegular.ttf);
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'FiraCode';
+  font-family: "FiraCode";
   src: url(../../static/fonts/FiraCode_VariableFont_wght.ttf);
 }
 
+html,
 body {
-  font-family: 'Haffer';
+  background-color: var(--bg-primary-kh);
+}
+body {
+  font-family: "Haffer";
   font-weight: 200;
 }
 
@@ -120,7 +165,7 @@ h4,
 h5 {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: 'FiraCode';
+  font-family: "FiraCode";
   font-weight: 500;
   width: 100%;
   line-height: 180%;
@@ -146,7 +191,7 @@ h4 {
 }
 
 ul {
-  font-family: 'Haffer';
+  font-family: "Haffer";
   font-weight: 200;
   text-transform: none;
 }
@@ -154,16 +199,16 @@ ul {
   margin-bottom: 10px;
 }
 .sidebar-title {
-  font-size: 1.0rem;
-  font-family:'Haffer';
+  font-size: 1rem;
+  font-family: "Haffer";
   font-weight: 500;
   letter-spacing: 0.05em;
-  margin: .7rem;
+  margin: 0.7rem;
   text-transform: uppercase;
 }
 #bittensor-img {
   width: 80%;
   display: block;
   margin-left: auto;
-  margin-right: auto;;
+  margin-right: auto;
 }
